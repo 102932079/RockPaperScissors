@@ -4,16 +4,21 @@
 </div>
 <!-- game panel -->
 <div class="container">
-    <div class="boxflex">
+    <div class="choices">
+        <input type="button" class="selection rock" (click)="selectOption('rock')">
+        <input type="button" class="selection paper" (click)="selectOption('paper')">
+        <input type="button" class="selection scissors" (click)="selectOption('scissors')">
+
         <!-- define selecetion div and click event -->
         <!-- click event and selectoption is new stuff (method) in the () is the option you defined in method-->
         <!-- ng class The CSS classes are updated as follows, depending on the type of the expression evaluation: string array object-->
         <!-- ng style to change div border style -->
-        <div class="rock box" [ngStyle]="{'border' : rockSelected ? '5px solid red' : '1px solid black'}" (click)="selected('rock')">Rock</div>
-        <div class="paper box" [ngStyle]="{'border' : paperSelected ? '5px solid red' : '1px solid black'}" (click)="selected('paper')">Paper</div>
-        <div class="scissors box" [ngStyle]="{'border' : scissorsSelected ? '5px solid red' : '1px solid black'}" (click)="selected('scissors')">Scissors</div>      
+        <!-- <div class="rock box" [ngStyle]="{'border' : rockSelected ? '5px solid red' : '1px solid black'}" (click)="selected('rock')">Rock</div> -->
+        <!-- <div class="paper box" [ngStyle]="{'border' : paperSelected ? '5px solid red' : '1px solid black'}" (click)="selected('paper')">Paper</div> -->
+        <!-- <div class="scissors box" [ngStyle]="{'border' : scissorsSelected ? '5px solid red' : '1px solid black'}" (click)="selected('scissors')">Scissors</div>       -->
     </div>
+    <button (click)="send()">Shoot!</button>
     <!-- null option click to call method -->
     <!-- see figma for css and text option -->
-    <button class="btn" (click)="buttonClicked()">Shoot!</button>
+    <!-- <button class="btn" (click)="buttonClicked()">Shoot!</button> -->
 </div>

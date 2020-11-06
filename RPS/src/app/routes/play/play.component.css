@@ -1,5 +1,65 @@
-  
-:host{
+* {
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+button {
+    margin-top: 50px;
+    background-color: midnightblue;
+    color: whitesmoke;
+    border: 2px solid midnightblue;
+    padding: 10px 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.choices {
+    display: inline-flex;
+}
+
+.selection {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    border: none;
+}
+
+.selection:focus {
+    outline: 1px solid midnightblue;
+}
+
+.rock {
+    background: url('../../../assets/scissors.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.paper {
+    background: url('../../../assets/paper.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.scissors {
+    background: url('../../../assets/rock.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+} 
+/* :host{
     display: block;
     width: 800px;
     height: 330px;
@@ -60,4 +120,4 @@
     font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif;
     font-size: 17px;
     color: #ffff;
-}
+} */
