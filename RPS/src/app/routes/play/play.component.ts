@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 //import service
-import { GameService } from 'src/app/game.service';
+import { GameService } from 'src/app/services/game.service';
 
 @Component({
   selector: 'app-play',
