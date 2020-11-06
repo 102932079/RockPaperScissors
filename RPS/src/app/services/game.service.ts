@@ -3,11 +3,12 @@
 //import injectable from core Decorator that marks a class as available to be provided and injected as a dependency.
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { serverResponse } from '../models/LeaderBoardModel';
+import { LeaderBoardModel } from '../models/LeaderBoardModel';
+import { SubmitRequestModel, SubmitResponseModel } from '../models/SubmitModel';
 import { of } from 'rxjs';
 import { delay } from 'rxjs/operators';
 
-//import http request
+//import http request (for webapi)
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
@@ -27,33 +28,43 @@ export class GameService {
   //get and set property like c#, selection variable is public
 
   //the datatype is different now
-  private _compSelection: string | null;
-  private _playerSelection: string | null;
-  private _result: string | null;
 
+  //playerselection and username is private, result and aiselection is not
+  //beacuse no need to call result and aiselction here
+
+  private _playerSelection: string | null;
+  private _username: string | null;
 
   get playerSelection(){
     return this._playerSelection;
   }
 
-  get compSelection(){
-    return this._compSelection;
+  get username(){
+    return this._username;
   }
 
-  get result(){
-    return this._result;
-  }
+  //get result(){
+    //return this._result;
+  //}
+  _aISelection: string;
+  _result: string;
 
   //import the router service and http request
-  constructor(private router: Router, private httpClient: HttpClient) { 
+  constructor(private router: Router, private client: HttpClient) { 
     //recall
-    this.httpClient = httpClient;
+    
     // https://stackoverflow.com/questions/4550505/getting-a-random-value-from-a-javascript-array
+  }
+
+  //new method for commit username
+  commitUsername(username: string)
+  {
+    this._username = username;
   }
 
 
   //add: local api integration
-  commitSelection(option: 'rock' | 'paper' | 'scissors'){
+  commitSelection(option: ){//option in the 
     //serverresponse is interface from models
     let request = this.httpClient.post<serverResponse>("http://localhost:4200/RPS_/",//stil need to looking for the local port for my app
     {
