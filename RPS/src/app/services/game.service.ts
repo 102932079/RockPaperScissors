@@ -65,18 +65,21 @@ export class GameService {
 
 
   //add: local api integration
-  commitSelection(option: ){//option in the 
+  commitSelection(option: SubmitVoteRequestModel){//option in the 
     //serverresponse is interface from models
-    let request = this.httpClient.post<serverResponse>("http://localhost:4200/RPS_/",//stil need to looking for the local port for my app
-    {
-      playerChoice: option,
-    });
+    //the post there after client. need to be same with http request in the webapi is post here, the leaderboard one is get
+    let request = this.client.post<SubmitVoteResponseModel>("http://localhost:5500/api/vote/submit", option)//stil need to looking for the local port for my app
+    // {//before coma is the url for web api
+    //   playerChoice: option,
+    // });//after coma is the body that you send to webapi , in the case is the playerchoice from submitvote resquest, is the variable 'option' or you can use vaule
     request.subscribe((response) =>
-    {
-      //store the selection
+    {// response is the data back from submitvoteresponesmodel so it will be four things player ai username result
+      //then we need store them into the variable we created ealyer all _variable
+      //store the selection 
       this._playerSelection = response.playerChoice;
-      this._compSelection = response.cpuChoice;
+      this._aISelection = response.aIChoice;
       this._result = response.result;
+      this._username = response.username;
       this.router.navigateByUrl("/result");
     }, (error) => {//error handling new content
       //http status
