@@ -3,8 +3,8 @@
 //import injectable from core Decorator that marks a class as available to be provided and injected as a dependency.
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { LeaderBoardModel } from '../models/LeaderBoardModel';
-import { SubmitRequestModel, SubmitResponseModel } from '../models/SubmitModel';
+import { LeaderBoardModel } from '../models/LeaderBoardVoteResponseModel';
+import { SubmitRequestModel, SubmitResponseModel } from '../models/SubmitVoteResponseModel';
 import { of } from 'rxjs';
 import { delay } from 'rxjs/operators';
 
