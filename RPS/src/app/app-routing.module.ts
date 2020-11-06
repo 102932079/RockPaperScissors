@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { LeaderboardComponent } from './routes/leaderboard/leaderboard.component';
 //import all component
 import { PlayComponent } from './routes/play/play.component';
 import { ResultComponent } from './routes/result/result.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   // dynamic object
   {path: "play", component: PlayComponent},
   {path: "result", component: ResultComponent},
+  {path: "leaderboard", component: LeaderboardComponent},
   // define another route here ** patrol routes
   {path: "**", redirectTo: "play" }
    // if we going to the home page of patrol it will automatically redirect to play compo

@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { from } from 'rxjs';
+import { ScoreService } from 'src/app/services/score.service';
+import { LeaderBoardVoteResponseModel } from '../../models/LeaderBoardVoteResponseModel';
 
 @Component({
   selector: 'app-score-list',
@@ -7,7 +10,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScoreListComponent implements OnInit {
 
-  constructor() { }
+  //recall service
+  constructor(public ScoreService: ScoreService) { }
 
   ngOnInit(): void {
   }

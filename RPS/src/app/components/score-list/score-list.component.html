@@ -1,1 +1,1 @@
-<p>score-list works!</p>
+<app-score *ngFor="let score of scoreService.scores | slice:0:2" [score]="score"></app-score>
