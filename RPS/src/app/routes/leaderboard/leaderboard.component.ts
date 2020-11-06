@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScoreService } from "../../services/score.service";
 
 @Component({
   selector: 'app-leaderboard',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./leaderboard.component.css']
 })
 export class LeaderboardComponent implements OnInit {
-
-  constructor() { }
+  //recall service 
+  constructor(public scoreService: ScoreService) { }
 
   ngOnInit(): void {
+    this.scoreService.getLeaderBoard();
   }
 
 }
