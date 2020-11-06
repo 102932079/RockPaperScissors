@@ -1,0 +1,38 @@
+Todo list
+
+-set up enviorment if needed
+npm install -g @angular/cli
+npm install --save-dev @angular-devkit/build-angular
+npm update
+
+-strat the project
+routing for this project css
+ng new <app name>
+game
+
+-Run the application
+ng serve --open
+
+-create routes folder
+mkdir routes
+
+-create component with in routes folder(move terminal into routes before generate)
+ng generate component <component name>
+play(game interface) result(summary)
+
+-create service ( move to service folder if needed)
+ng generate service <name>
+(game) to store game data
+
+-serching picture for rock paper scissors png and left in assets
+
+-define service 
+
+-define component
+
+-define root app component
+
+-routes outlet in root html
+
+-define component import and path in app routing module ts
+

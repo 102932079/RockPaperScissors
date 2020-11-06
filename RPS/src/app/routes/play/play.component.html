@@ -1,0 +1,19 @@
+<!-- game interface -->
+<div class="title">
+    <p>Rock, Paper, Scissors : Choose your option</p>
+</div>
+<!-- game panel -->
+<div class="container">
+    <div class="boxflex">
+        <!-- define selecetion div and click event -->
+        <!-- click event and selectoption is new stuff (method) in the () is the option you defined in method-->
+        <!-- ng class The CSS classes are updated as follows, depending on the type of the expression evaluation: string array object-->
+        <!-- ng style to change div border style -->
+        <div class="rock box" [ngStyle]="{'border' : rockSelected ? '5px solid red' : '1px solid black'}" (click)="selected('rock')">Rock</div>
+        <div class="paper box" [ngStyle]="{'border' : paperSelected ? '5px solid red' : '1px solid black'}" (click)="selected('paper')">Paper</div>
+        <div class="scissors box" [ngStyle]="{'border' : scissorsSelected ? '5px solid red' : '1px solid black'}" (click)="selected('scissors')">Scissors</div>      
+    </div>
+    <!-- null option click to call method -->
+    <!-- see figma for css and text option -->
+    <button class="btn" (click)="buttonClicked()">Shoot!</button>
+</div>

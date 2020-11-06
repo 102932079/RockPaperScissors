@@ -1,0 +1,30 @@
+<!-- game result summay -->
+<div class="title">
+    <p>Rock, Paper, Scissors : game result</p>
+</div>
+<div class="container">
+    <!-- variable for result imported from service-->
+    <!-- gameservice need recall in ts ctor -->
+    <div class="result"><h1>You {{gameService.result}} !</h1></div>
+    
+
+    <div class="boxflex" [ngClass]="playerChoiceClass">
+        <div class="box">
+            <h2>You choosed {{gameService.playerSelection}}</h2>
+            <!-- need to add ngif do display the right img -->
+        </div>
+
+        <div class="versus box"> VS </div>
+
+        <div class="box" [ngClass]="cpuChoiceClass">
+            <h2>Cpu choosed {{gameService.compSelection}}</h2>
+        </div>
+    </div>
+
+    <div>
+        <!-- routerlink a quick way to jump to componet-->
+        <a routerLink="play"><button class="btn">Try Again?</button></a>
+    </div>
+</div>
+
+<!-- ngif loading ngif loaded -->

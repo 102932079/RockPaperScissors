@@ -1,0 +1,66 @@
+-create reop
+mkdir [reponame]
+model/ tests/ RPS_WebApi
+
+-create solution
+dotnet new sln
+-References
+dotnet sln add <references>
+strat from root folder to ref webapi csproj
+dotnet sln add .\Tests\Tests.csproj
+dotnet sln add .\RPS_WebApi\RPS_WebApi.csproj
+
+-create test
+dotnet new xunit
+-References
+dotnet add reference <references>
+start for this test folder to ref webapi csproj
+dotnet add reference ..\RPS_WebApi\RPS_WebApi.csproj
+
+-create webapi with controllers
+dotnet new webapi
+
+no need
+-create class in models
+dotnet new classlib
+
+=========================================================
+extra content from new video
+
+1.dont need to touch program.cs much (just start to host and running it)
+
+2.startup.cs (startup method) add cors method and disable use http redirection
+
+3.create controllers , delete weatherforecast controllers and cs .net core
+  there are some naming principle that suggested to consider
+  create endpoint for http request
+  name convention
+  // the name of the method(submit)/the name of the controller(vote)/what it is(request)/named model beacuse of no impelmentation 
+
+4.after create controllers test run dotnet build and debug, then run application go servier, check url and port 5500
+need use postman to post web page only can get
+https://localhost:5500(5500 port may different each time)
+you should be able to get responed but i cant(the selection back)
+https://localhost:5500/api/vote/submit
+ERR_SSL_PROTOCOL_ERROR
+Error: write EPROTO 1364819432:error:100000f7:SSL routines:OPENSSL_internal:WRONG_VERSION_NUMBER:../../third_party/boringssl/src/ssl/tls_record.cc:242:
+how to run application and to see listening on port?
+
+(goes in angular)
+5. next step is to impelmentation into angular 
+create the new file and the name is what class/interface related to 
+in csharp we want the class beacuse is the best way to gather data in c# 
+but in angular is interface(we dont have method just a property that exist)
+
+create two interface in models like what we did in csharp classs
+import httpclient in service.ts and module.ts
+
+makeing the request in commitselection() same method requared
+this.client import the interface from model at top
+define return (responed)after post request and request in parameter
+then subcribe for what to do after reviced the responed
+pass in the return value for variable and then router navigate to display
+error handling(optional)
+test it ng serve -o
+
+run dev tool, api port and angular at both time to test
