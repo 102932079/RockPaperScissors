@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PlayComponent } from './routes/play/play.component';
 import { ResultComponent } from './routes/result/result.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -12,9 +13,11 @@ import { ResultComponent } from './routes/result/result.component';
     PlayComponent,
     ResultComponent
   ],
+  //add http client moudule here for the game service
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
