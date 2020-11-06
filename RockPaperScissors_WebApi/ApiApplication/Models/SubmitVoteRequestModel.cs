@@ -21,3 +21,16 @@
 //         public string Colour { get; set; }//next thing is impleting this to the request
 //     }
 // }
+
+using System;
+namespace ApiApplication.Models
+{
+    public class SubmitVoteRequestModel
+    {
+        //prop
+        public string Username { get; set; }
+        public string PlayerChoice { get; set; }
+        //ctor
+        public SubmitVoteRequestModel(){}
+    }
+}
