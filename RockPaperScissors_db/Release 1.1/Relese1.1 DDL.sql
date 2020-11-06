@@ -36,7 +36,7 @@ CREATE TABLE PLAYER (
     Username    NVARCHAR ( 50 ) NOT NULL
 ,   PRIMARY KEY ( Username )
 );
-
+-- The PRIMARY KEY constraint uniquely identifies each record in a table. Primary keys must contain UNIQUE values, and cannot contain NULL values.
 CREATE TABLE SELECTION (
     Choice  NVARCHAR ( 8 ) NOT NULL
 ,   PRIMARY KEY ( Choice )
