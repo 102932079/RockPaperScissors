@@ -2,7 +2,7 @@
 
 
 //json property name attribute
-export interface SubmitResponseModel {
+export interface SubmitVoteResponseModel {
     username: string;
     playerChoice: string;
     aIChoice: string;
