@@ -1,1 +1,17 @@
-<router-outlet></router-outlet>
+<div class="page">
+    <div class="header">
+      
+      <div class="login">
+        <h4>Username:</h4>
+        <input *ngIf="username == null" type="text" (keyup.enter)="setUsername($event)">
+        <p>{{username}}</p>
+      </div>
+    </div>
+  
+    <div class="routes">
+      <router-outlet></router-outlet>
+    </div>
+  
+    <a routerLink="leaderboard" class="footer">View Report</a>
+    <a routerLink="play" class="footer">Play Game</a>
+  </div>

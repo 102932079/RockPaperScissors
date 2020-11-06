@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+h2 {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.page {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 60%;
+    /* border: 1px solid red; */
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.login {
+    display: inline-flex;
+    align-items: baseline;
+}
+
+.login input {
+    height: 25px;
+}
+
+.login h4 {
+    padding-right: 10px;
+
+}
+
+.routes {
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+}
+
+.footer {
+    float: right;
+    cursor: pointer;
+    color: rgb(59, 145, 231);
+}
