@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { send } from 'process';
+
 //import service
 import { GameService } from 'src/app/services/game.service';
 
@@ -41,9 +41,9 @@ export class PlayComponent implements OnInit {
   }
 
   //the core function move the winning condition to webapi
-  send() //check null
+  submit() //check null
   {
-    if (this)
+    if (this.gameService.username == null)
     {
       alert("Enter username!")
     }
