@@ -12,14 +12,51 @@ namespace ApiApplication.Controllers
     [Route("[api/Vote]")]//[Route("[controller]")]//[Route("api/controller")]
     public class VoteController : ControllerBase
     {
-        //user class for leaderboard
-        public static List<User> Positions = List<User>();
+        //need a class for leaderboard
+        public static List<LeaderBoardVoteResponseModel> Positions = List<LeaderBoardVoteResponseModel>();
 
         public VoteController() {}
 
         //post request to get result /api/vote/submit
         [HttpPost("Submit")]
-        public Round
+        public SubmitVoteResponseModel SubmitVote([FromBody] SubmitVoteRequestModel request)
+        {
+            SubmitVoteResponseModel r = new SubmitVoteResponseModel(request.Username, request.PlayerChoice);
+
+            LeaderBoardVoteResponseModel user = null;
+            LeaderBoardVoteResponseModel found = Positions.Find(u => u.Username == request.Username);
+
+            if(found == null)
+            {
+                user = new LeaderBoardVoteResponseModel(request.Username, 0, 1);
+                Positions.Add(user);
+            }
+
+            else
+            {
+                user = found;
+                user.TurnsPlayed++;
+            }
+
+            if(r.Result == "win")
+            {
+                user.Wins++;
+            }
+
+            user.CalculateWinRatio();
+
+            return r;
+
+        }
+
+        //get request for leaderbord /api/vote/leaderboard
+        [HttpGet("LeaderBoard")]
+        public List<LeaderBoardVoteResponseModel> ViewLeaderBoard()
+        {
+            List<LeaderBoardVoteResponseModel> LeaderBoardView = Positions.OrderByDescending(u => u.WinRatio).ToList();
+
+            return LeaderBoardView;
+        }
 
         //======================demo=====================================================================
         //define the endpoint(access point for the request to be made)

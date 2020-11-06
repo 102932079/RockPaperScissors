@@ -33,7 +33,7 @@
 
 using System;
 
-namespace ApiApplication.Models
+namespace ApiApplication.Controllers.Models
 {
     public class SubmitVoteResponseModel
     {
@@ -83,15 +83,15 @@ namespace ApiApplication.Models
         {
             if (this.AIChoice == this.PlayerChoice)
             {
-               return this.Result = "Draw";
+               return this.Result = "draw";
             }
-            else if ((this.PlayerChoice == "Rock" && this.AIChoice == "Scissors") || (this.PlayerChoice == "Paper" && this.AIChoice == "Rock") || (this.PlayerChoice == "Scissors" && this.AIChoice == "Paper"))
+            else if ((this.PlayerChoice == "rock" && this.AIChoice == "scissors") || (this.PlayerChoice == "paper" && this.AIChoice == "rock") || (this.PlayerChoice == "scissors" && this.AIChoice == "paper"))
             {
-                return this.Result = "Win";
+                return this.Result = "win";
             }
             else 
             {
-                return this.Result = "Lose";
+                return this.Result = "lose";
             }
             //no error condition
         }

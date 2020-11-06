@@ -23,7 +23,7 @@
 // }
 
 using System;
-namespace ApiApplication.Models
+namespace ApiApplication.Controllers.Models
 {
     public class SubmitVoteRequestModel
     {

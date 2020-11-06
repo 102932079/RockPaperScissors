@@ -1,6 +1,6 @@
 //all property of leaderboard
 using system;
-namespace ApiApplication.Models
+namespace ApiApplication.Controllers.Models
 {
     public class LeaderBoardVoteResponseModel
     {
