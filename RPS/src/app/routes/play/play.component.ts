@@ -43,7 +43,7 @@ export class PlayComponent implements OnInit {
   //the core function move the winning condition to webapi
   send() //check null
   {
-    if (this.gameService.username == null)
+    if (this)
     {
       alert("Enter username!")
     }
