@@ -15,6 +15,12 @@ namespace ApiApplication.Controllers
         //need a class for leaderboard
         public static List<LeaderBoardVoteResponseModel> Positions = List<LeaderBoardVoteResponseModel>();
 
+        //system generated syntax
+        private static List<T> List<T>()
+        {
+            throw new NotImplementedException();
+        }
+
         public VoteController() {}
 
         //post request to get result /api/vote/submit
