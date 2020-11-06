@@ -7,13 +7,17 @@ import { PlayComponent } from './routes/play/play.component';
 import { ResultComponent } from './routes/result/result.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LeaderboardComponent } from './routes/leaderboard/leaderboard.component';
+import { ScoreComponent } from './components/score/score.component';
+import { ScoreListComponent } from './components/score-list/score-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlayComponent,
     ResultComponent,
-    LeaderboardComponent
+    LeaderboardComponent,
+    ScoreComponent,
+    ScoreListComponent
   ],
   //add http client moudule here for the game service
   imports: [
