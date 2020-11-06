@@ -12,24 +12,34 @@ namespace ApiApplication.Controllers
     [Route("[api/Vote]")]//[Route("[controller]")]//[Route("api/controller")]
     public class VoteController : ControllerBase
     {
+        //user class for leaderboard
+        public static List<User> Positions = List<User>();
+
+        public VoteController() {}
+
+        //post request to get result /api/vote/submit
+        [HttpPost("Submit")]
+        public Round
+
+        //======================demo=====================================================================
         //define the endpoint(access point for the request to be made)
         //we got this method to add with what to contribute the to define the endpoint(waht do we need here)
         //we need to give some kind of method for client to revice
         //it's post here beacuse we are submmit sth (post request)
         //define route template as patasiss (post/api/vote) access via postman
-        [HttpPost("submit")]//url/api/vote/submit
+        //[HttpPost("submit")]//url/api/vote/submit
         //we need to give some return type instead of void(cant just not return any thing(no respond))
-        public SubmitVoteResponseModel SubmitVote([FromBody] SubmitVoteRequestModel model)//take this request from body//call this to model
+        //public SubmitVoteResponseModel SubmitVote([FromBody] SubmitVoteRequestModel model)//take this request from body//call this to model
         //now the data comes in and going to return some data, the return type should be from void to the response model
-        {
-            return new SubmitVoteResponseModel()//the return type is a method then define this method
-            {
-                Selection = " You selected " + model.Colour + ". That was bad. "
-            };
-        }
+        //{
+            //return new SubmitVoteResponseModel()//the return type is a method then define this method
+            //{
+                //Selection = " You selected " + model.Colour + ". That was bad. "
+           // };
+        //}
 
         //=========================================================
-        //move the win condition logic to angualr(fornt end)
+        //move the win condition model
 
         // //random variable
         // public static Random rnd = new Random();
