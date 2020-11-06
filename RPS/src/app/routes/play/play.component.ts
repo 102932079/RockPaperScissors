@@ -43,15 +43,15 @@ export class PlayComponent implements OnInit {
   //the core function move the winning condition to webapi
   send() //check null
   {
-    if (this.gameservice.username == null)
+    if (this.gameService.username == null)
     {
       alert("Enter username!")
     }
     else
     {
-      this.gameservice.commitSelection({
-        username: this.gameservice.username,
-        playerSelection: this.selection
+      this.gameService.commitSelection({
+        username: this.gameService.username,
+        playerSelection: this.playerSelection
       });
     }
   }

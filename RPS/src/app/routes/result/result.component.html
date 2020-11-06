@@ -3,27 +3,37 @@
     <p>Rock, Paper, Scissors : game result</p>
 </div>
 <div class="container">
+    <h1>{{gameService._result}}!</h1>
+    <div class="choices">
+        <div *ngIf="gameService.playerSelection === 'rock'" class="selection rock"></div>
+        <div *ngIf="gameService.playerSelection === 'paper'" class="selection paper"></div>
+        <div *ngIf="gameService.playerSelection === 'scissors'" class="selection scissors"></div>
+        <h3>vs</h3>
+        <div *ngIf="gameService._aISelection === 'rock'" class="selection rock"></div>
+        <div *ngIf="gameService._aISelection === 'paper'" class="selection paper"></div>
+        <div *ngIf="gameService._aISelection === 'scissors'" class="selection scissors"></div>
+    </div>
     <!-- variable for result imported from service-->
     <!-- gameservice need recall in ts ctor -->
-    <div class="result"><h1>You {{gameService.result}} !</h1></div>
+    <!-- <div class="result"><h1>You {{gameService.result}} !</h1></div> -->
     
 
-    <div class="boxflex" [ngClass]="playerChoiceClass">
-        <div class="box">
-            <h2>You choosed {{gameService.playerSelection}}</h2>
+    <!-- <div class="boxflex" [ngClass]="playerChoiceClass"> -->
+        <!-- <div class="box"> -->
+            <!-- <h2>You choosed {{gameService.playerSelection}}</h2> -->
             <!-- need to add ngif do display the right img -->
-        </div>
+        <!-- </div> -->
 
-        <div class="versus box"> VS </div>
+        <!-- <div class="versus box"> VS </div> -->
 
-        <div class="box" [ngClass]="cpuChoiceClass">
-            <h2>Cpu choosed {{gameService.compSelection}}</h2>
-        </div>
-    </div>
+        <!-- <div class="box" [ngClass]="cpuChoiceClass"> -->
+            <!-- <h2>Cpu choosed {{gameService.compSelection}}</h2> -->
+        <!-- </div> -->
+    <!-- </div> -->
 
     <div>
         <!-- routerlink a quick way to jump to componet-->
-        <a routerLink="play"><button class="btn">Try Again?</button></a>
+        <a routerLink="play"><button>Try Again?</button></a>
     </div>
 </div>
 
