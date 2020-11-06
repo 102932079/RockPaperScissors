@@ -1,4 +1,5 @@
 //interface/class for leaderboard
+//same with api
 export interface LeaderBoardModel
 {
     username: string;
