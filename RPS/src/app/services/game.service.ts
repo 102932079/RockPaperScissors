@@ -68,7 +68,7 @@ export class GameService {
   commitSelection(option: SubmitVoteRequestModel){//option in the 
     //serverresponse is interface from models
     //the post there after client. need to be same with http request in the webapi is post here, the leaderboard one is get
-    let request = this.client.post<SubmitVoteResponseModel>("http://localhost:5500/api/vote/submit", option)//stil need to looking for the local port for my app
+    let request = this.client.post<SubmitVoteResponseModel>("http://localhost:5000/controllers/submit", option)//stil need to looking for the local port for my app
     // {//before coma is the url for web api
     //   playerChoice: option,
     // });//after coma is the body that you send to webapi , in the case is the playerchoice from submitvote resquest, is the variable 'option' or you can use vaule

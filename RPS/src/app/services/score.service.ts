@@ -17,7 +17,7 @@ export class ScoreService {
   }
 
   getLeaderBoard(){
-    this.httpClient.get<LeaderBoardVoteResponseModel[]>("http://localhost:5500/api/vote/leaderboard").subscribe((response) => 
+    this.httpClient.get<LeaderBoardVoteResponseModel[]>("http://localhost:5000/controllers/leaderboard").subscribe((response) => 
     {
       this.scores = response;
       console.log(response);
