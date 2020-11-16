@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\github\\CsharpProgramming\\RockPaperScissors_WebApi\\ApiApplication\\ApiApplication.csproj": {}
+    "D:\\github\\RockPaperScissors\\RockPaperScissors_WebApi\\ApiApplication\\ApiApplication.csproj": {}
   },
   "projects": {
-    "D:\\github\\CsharpProgramming\\RockPaperScissors_WebApi\\ApiApplication\\ApiApplication.csproj": {
+    "D:\\github\\RockPaperScissors\\RockPaperScissors_WebApi\\ApiApplication\\ApiApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\CsharpProgramming\\RockPaperScissors_WebApi\\ApiApplication\\ApiApplication.csproj",
+        "projectUniqueName": "D:\\github\\RockPaperScissors\\RockPaperScissors_WebApi\\ApiApplication\\ApiApplication.csproj",
         "projectName": "ApiApplication",
-        "projectPath": "D:\\github\\CsharpProgramming\\RockPaperScissors_WebApi\\ApiApplication\\ApiApplication.csproj",
+        "projectPath": "D:\\github\\RockPaperScissors\\RockPaperScissors_WebApi\\ApiApplication\\ApiApplication.csproj",
         "packagesPath": "C:\\Users\\tengw\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\CsharpProgramming\\RockPaperScissors_WebApi\\ApiApplication\\obj\\",
+        "outputPath": "D:\\github\\RockPaperScissors\\RockPaperScissors_WebApi\\ApiApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tengw\\AppData\\Roaming\\NuGet\\NuGet.Config"

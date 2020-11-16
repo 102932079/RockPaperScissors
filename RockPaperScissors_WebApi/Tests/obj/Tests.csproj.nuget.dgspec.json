@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\github\\CsharpProgramming\\RockPaperScissors_WebApi\\Tests\\Tests.csproj": {}
+    "D:\\github\\RockPaperScissors\\RockPaperScissors_WebApi\\Tests\\Tests.csproj": {}
   },
   "projects": {
-    "D:\\github\\CsharpProgramming\\RockPaperScissors_WebApi\\ApiApplication\\ApiApplication.csproj": {
+    "D:\\github\\RockPaperScissors\\RockPaperScissors_WebApi\\ApiApplication\\ApiApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\CsharpProgramming\\RockPaperScissors_WebApi\\ApiApplication\\ApiApplication.csproj",
+        "projectUniqueName": "D:\\github\\RockPaperScissors\\RockPaperScissors_WebApi\\ApiApplication\\ApiApplication.csproj",
         "projectName": "ApiApplication",
-        "projectPath": "D:\\github\\CsharpProgramming\\RockPaperScissors_WebApi\\ApiApplication\\ApiApplication.csproj",
+        "projectPath": "D:\\github\\RockPaperScissors\\RockPaperScissors_WebApi\\ApiApplication\\ApiApplication.csproj",
         "packagesPath": "C:\\Users\\tengw\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\CsharpProgramming\\RockPaperScissors_WebApi\\ApiApplication\\obj\\",
+        "outputPath": "D:\\github\\RockPaperScissors\\RockPaperScissors_WebApi\\ApiApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tengw\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -57,14 +57,14 @@
         }
       }
     },
-    "D:\\github\\CsharpProgramming\\RockPaperScissors_WebApi\\Tests\\Tests.csproj": {
+    "D:\\github\\RockPaperScissors\\RockPaperScissors_WebApi\\Tests\\Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\CsharpProgramming\\RockPaperScissors_WebApi\\Tests\\Tests.csproj",
+        "projectUniqueName": "D:\\github\\RockPaperScissors\\RockPaperScissors_WebApi\\Tests\\Tests.csproj",
         "projectName": "Tests",
-        "projectPath": "D:\\github\\CsharpProgramming\\RockPaperScissors_WebApi\\Tests\\Tests.csproj",
+        "projectPath": "D:\\github\\RockPaperScissors\\RockPaperScissors_WebApi\\Tests\\Tests.csproj",
         "packagesPath": "C:\\Users\\tengw\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\CsharpProgramming\\RockPaperScissors_WebApi\\Tests\\obj\\",
+        "outputPath": "D:\\github\\RockPaperScissors\\RockPaperScissors_WebApi\\Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tengw\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -78,8 +78,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\github\\CsharpProgramming\\RockPaperScissors_WebApi\\ApiApplication\\ApiApplication.csproj": {
-                "projectPath": "D:\\github\\CsharpProgramming\\RockPaperScissors_WebApi\\ApiApplication\\ApiApplication.csproj"
+              "D:\\github\\RockPaperScissors\\RockPaperScissors_WebApi\\ApiApplication\\ApiApplication.csproj": {
+                "projectPath": "D:\\github\\RockPaperScissors\\RockPaperScissors_WebApi\\ApiApplication\\ApiApplication.csproj"
               }
             }
           }

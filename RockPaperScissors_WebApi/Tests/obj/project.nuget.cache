@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Foh8/WyYVQA+7RVpzFEM/H1wBGiAaL/5rgmJiKOuDgTnicFwb1xVA11DWATURQ2SD6AMh6uNhlCgYQ/VzbNAlQ==",
+  "dgSpecHash": "EbTmznOo63LHbmkh0oQOUNWsd5qyGz1uIkH1LwJ2j+7XyAyQ86+TPoEmDqlbnwigjh0qciapkoidpVcwM1KAFw==",
   "success": true,
-  "projectFilePath": "D:\\github\\CsharpProgramming\\RockPaperScissors_WebApi\\Tests\\Tests.csproj",
+  "projectFilePath": "D:\\github\\RockPaperScissors\\RockPaperScissors_WebApi\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tengw\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\tengw\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",

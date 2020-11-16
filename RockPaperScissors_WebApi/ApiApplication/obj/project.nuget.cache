@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZajTPyhxIyTFr3A6+sgD3QF+iQmd8s9OBYkLRx/wOIG3UXaES5CDsQaaYuqHGuk3F4g67e78bDCQfZQ+efbcmw==",
+  "dgSpecHash": "2V8yvGtoAHfIRcP4xTnkn55v41gKg+x4z7z5cJYdJfb3dQc2RZqixdn8vqju/kEKwDmcfDpIcPYEQl1YgcHAvw==",
   "success": true,
-  "projectFilePath": "D:\\github\\CsharpProgramming\\RockPaperScissors_WebApi\\ApiApplication\\ApiApplication.csproj",
+  "projectFilePath": "D:\\github\\RockPaperScissors\\RockPaperScissors_WebApi\\ApiApplication\\ApiApplication.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
