@@ -1,11 +1,11 @@
 Todo list
 
--set up enviorment if needed
+-set up environment if needed
 npm install -g @angular/cli
 npm install --save-dev @angular-devkit/build-angular
 npm update
 
--strat the project
+-start the project
 routing for this project css
 ng new <app name>
 game
@@ -24,7 +24,7 @@ play(game interface) result(summary)
 ng generate service <name>
 (game) to store game data
 
--serching picture for rock paper scissors png and left in assets
+-searching picture for rock paper scissors png and left in assets
 
 -define service 
 

@@ -15,11 +15,11 @@ import { ScoreListComponent } from './components/score-list/score-list.component
     AppComponent,
     PlayComponent,
     ResultComponent,
-    LeaderboardComponent,
+    LeaderboardComponent,//? Leaderboard
     ScoreComponent,
     ScoreListComponent
   ],
-  //add http client moudule here for the game service
+  //add http client module here for the game service
   imports: [
     BrowserModule,
     AppRoutingModule,
