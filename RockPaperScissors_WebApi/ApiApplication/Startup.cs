@@ -26,7 +26,7 @@ namespace ApiApplication
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            //add cors service option inside option is going to be ok
+            //!add cors service option inside option is going to be ok
             services.AddCors(options =>
             {
                 options.AddDefaultPolicy(options =>
@@ -35,7 +35,7 @@ namespace ApiApplication
                         .AllowAnyOrigin()
                         .AllowAnyMethod()
                         .AllowAnyHeader();
-                        //.AllowCredentials();
+                        //`.AllowCredentials();
                 });
             });
         }
@@ -48,10 +48,10 @@ namespace ApiApplication
                 app.UseDeveloperExceptionPage();
             }
 
-            //last step add cors method
+            //!last step add cors method
             app.UseCors();
 
-            //Disabled: app.UseHttpsRedirection(); (for this RPS project)
+            //!Disabled: app.UseHttpsRedirection(); (for this RPS project)
 
             app.UseRouting();
 

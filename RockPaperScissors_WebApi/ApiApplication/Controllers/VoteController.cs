@@ -9,9 +9,9 @@ using ApiApplication.Controllers.Models;
 namespace ApiApplication.Controllers
 {
     [ApiController]
-    [Route("[controller]")]//[Route("[controller]")]//[Route("api/controller")]//api/vote is not working that way use the default
-    //Error: connect ECONNREFUSED 127.0.0.1:5500
-    //Error: write EPROTO 185016920:error:100000f7:SSL routines:OPENSSL_internal:WRONG_VERSION_NUMBER:../../third_party/boringssl/src/ssl/tls_record.cc:242:
+    [Route("[controller]")]//[Route("[controller]")]//[Route("api/controller")]//!api/vote is not working that way use the default
+    //?Error: connect ECONNREFUSED 127.0.0.1:5500
+    //?Error: write EPROTO 185016920:error:100000f7:SSL routines:OPENSSL_internal:WRONG_VERSION_NUMBER:../../third_party/boringssl/src/ssl/tls_record.cc:242:
 
     public class VoteController : ControllerBase
     {
@@ -58,7 +58,7 @@ namespace ApiApplication.Controllers
 
         }
 
-        //get request for leaderbord /api/vote/leaderboard
+        //get request for leaderboard /api/vote/leaderboard
         [HttpGet("LeaderBoard")]
         public List<LeaderBoardVoteResponseModel> ViewLeaderBoard()
         {
@@ -68,17 +68,17 @@ namespace ApiApplication.Controllers
         }
 
         //======================demo=====================================================================
-        //define the endpoint(access point for the request to be made)
-        //we got this method to add with what to contribute the to define the endpoint(waht do we need here)
-        //we need to give some kind of method for client to revice
-        //it's post here beacuse we are submmit sth (post request)
-        //define route template as patasiss (post/api/vote) access via postman
-        //[HttpPost("submit")]//url/api/vote/submit
-        //we need to give some return type instead of void(cant just not return any thing(no respond))
-        //public SubmitVoteResponseModel SubmitVote([FromBody] SubmitVoteRequestModel model)//take this request from body//call this to model
-        //now the data comes in and going to return some data, the return type should be from void to the response model
+        //`define the endpoint(access point for the request to be made)
+        //`we got this method to add with what to contribute the to define the endpoint(what do we need here)
+        //`we need to give some kind of method for client to revice
+        //`it's post here because we are submit sth (post request)
+        //`define route template as patsies (post/api/vote) access via postman
+        //`[HttpPost("submit")]//url/api/vote/submit
+        //`we need to give some return type instead of void(cant just not return any thing(no respond))
+        //`public SubmitVoteResponseModel SubmitVote([FromBody] SubmitVoteRequestModel model)//take this request from body//call this to model
+        //`now the data comes in and going to return some data, the return type should be from void to the response model
         //{
-            //return new SubmitVoteResponseModel()//the return type is a method then define this method
+            //`return new SubmitVoteResponseModel()//the return type is a method then define this method
             //{
                 //Selection = " You selected " + model.Colour + ". That was bad. "
            // };
@@ -105,7 +105,7 @@ namespace ApiApplication.Controllers
         //     string result = null;
 
         //     //player choice
-        //     //switch is a selection statement that chooses a single switch section to execute from a list of candidates based on a pattern match with the match expression.
+        //`switch is a selection statement that chooses a single switch section to execute from a list of candidates based on a pattern match with the match expression.
         //     switch (playRequest.PlayerChoice.ToLower())
         //     {
         //         case "rock":

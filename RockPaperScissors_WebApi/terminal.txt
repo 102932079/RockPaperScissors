@@ -1,33 +1,35 @@
--create reop
+-create repo
 mkdir [reponame]
 model/ tests/ RPS_WebApi
 
 -create solution
 dotnet new sln
+
 -References
 dotnet sln add <references>
-strat from root folder to ref webapi csproj
+`start from root folder to ref webapi csproj
 dotnet sln add .\Tests\Tests.csproj
 dotnet sln add .\RPS_WebApi\RPS_WebApi.csproj
 
 -create test
 dotnet new xunit
+
 -References
 dotnet add reference <references>
-start for this test folder to ref webapi csproj
+`start for this test folder to ref webapi csproj
 dotnet add reference ..\RPS_WebApi\RPS_WebApi.csproj
 
 -create webapi with controllers
 dotnet new webapi
 
-no need
+`no need
 -create class in models
 dotnet new classlib
 
 =========================================================
-extra content from new video
+`extra content from new video
 
-1.dont need to touch program.cs much (just start to host and running it)
+1.don't need to touch program.cs much (just start to host and running it)
 
 2.startup.cs (startup method) add cors method and disable use http redirection
 
@@ -35,31 +37,35 @@ extra content from new video
   there are some naming principle that suggested to consider
   create endpoint for http request
   name convention
-  // the name of the method(submit)/the name of the controller(vote)/what it is(request)/named model beacuse of no impelmentation 
+  // the name of the method(submit)/the name of the controller(vote)/what it is(request)/named model because of no implementation 
 
-4.after create controllers test run dotnet build and debug, then run application go servier, check url and port 5500
-need use postman to post web page only can get
+4.after create controllers test run dotnet build and debug, then run application go server, check url and port 5500
+`need use postman to post web page only can get
 https://localhost:5500(5500 port may different each time)
-you should be able to get responed but i cant(the selection back)
+`you should be able to get responded but i cant(the selection back)
 https://localhost:5500/api/vote/submit
+
 ERR_SSL_PROTOCOL_ERROR
 Error: write EPROTO 1364819432:error:100000f7:SSL routines:OPENSSL_internal:WRONG_VERSION_NUMBER:../../third_party/boringssl/src/ssl/tls_record.cc:242:
-how to run application and to see listening on port?
+?how to run application and to see listening on port? dotnet build and run
 
-(goes in angular)
-5. next step is to impelmentation into angular 
+`(goes in angular)
+5. next step is to implementation into angular 
 create the new file and the name is what class/interface related to 
-in csharp we want the class beacuse is the best way to gather data in c# 
-but in angular is interface(we dont have method just a property that exist)
+in csharp we want the class because is the best way to gather data in c# 
+but in angular is interface(we don't have method just a property that exist)
 
-create two interface in models like what we did in csharp classs
+create two interface in models like what we did in csharp classes
 import httpclient in service.ts and module.ts
 
-makeing the request in commitselection() same method requared
+making the request in commitselection() same method required
 this.client import the interface from model at top
-define return (responed)after post request and request in parameter
-then subcribe for what to do after reviced the responed
+
+define return (responded)after post request and request in parameter
+then subscribe for what to do after received the responded
+
 pass in the return value for variable and then router navigate to display
+
 error handling(optional)
 test it ng serve -o
 
