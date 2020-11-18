@@ -37,7 +37,7 @@ export class PlayComponent implements OnInit {
     // }
     // else if (option == 'scissors'){
     //   this.scissorsSelected = !this.scissorsSelected;
-    }
+    //}
   }
 
   //the core function move the winning condition to webapi
@@ -71,6 +71,6 @@ export class PlayComponent implements OnInit {
   //     return;
   //   }
     //JSON.stringify A common use of JSON is to exchange data to/from a web server.When sending data to a web server, the data has to be a string.Convert a JavaScript object into a string with JSON.stringify().
-  }
+  
 
 }

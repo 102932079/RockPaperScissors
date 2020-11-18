@@ -23,7 +23,7 @@ export class GameService {
   //_compSelection: string;
 
   //define player choice and result
-  //adding _ for not dulplicate with get, make variable private for not let user access it
+  // adding _ for not duplicate with get, make variable private for not let user access it
   //private _playerSelection: 'rock' | 'paper' | 'scissors' | null;
   //private _result: 'win' | 'lose' | 'draw' | null;  
   //get and set property like c#, selection variable is public
@@ -31,7 +31,7 @@ export class GameService {
   //the datatype is different now
 
   //playerselection and username is private, result and aiselection is not
-  //beacuse no need to call result and aiselction here
+  //because no need to call result and aiselction here
 
   private _playerSelection: string | null;
   private _username: string | null;
@@ -68,13 +68,13 @@ export class GameService {
   commitSelection(option: SubmitVoteRequestModel){//option in the 
     //serverresponse is interface from models
     //the post there after client. need to be same with http request in the webapi is post here, the leaderboard one is get
-    let request = this.client.post<SubmitVoteResponseModel>("http://localhost:5000/controllers/submit", option)//stil need to looking for the local port for my app
+    let request = this.client.post<SubmitVoteResponseModel>("http://localhost:5000/controllers/submit", option)//still need to looking for the local port for my app
     // {//before coma is the url for web api
     //   playerChoice: option,
-    // });//after coma is the body that you send to webapi , in the case is the playerchoice from submitvote resquest, is the variable 'option' or you can use vaule
+    // });//after coma is the body that you send to webapi , in the case is the playerchoice from submitvote request, is the variable 'option' or you can use vaule
     request.subscribe((response) =>
     {// response is the data back from submitvoteresponesmodel so it will be four things player ai username result
-      //then we need store them into the variable we created ealyer all _variable
+      //then we need store them into the variable we created earlier all _variable
       //store the selection 
       this._playerSelection = response.playerChoice;
       this._aISelection = response.aIChoice;
@@ -112,7 +112,7 @@ export class GameService {
   //   //the null here will be replaced by the get() request to the endpoint
   //   //add delay for routing service(most easy way) 1000ms=1sec
   //   of(null).pipe(delay(1000)).subscribe(() => {
-  //     //this stores the selction being pushed over from the component into the variable above
+  //     //this stores the selection being pushed over from the component into the variable above
   //     this._playerSelection = option;
   //     this._compSelection = this.compChoice[(Math.random() * this.compChoice.length) | 0];
   //     this.checkingResult();
@@ -120,12 +120,12 @@ export class GameService {
   //     this.router.navigateByUrl("/result");
   //     //add a condition that none selected
   //     if(this._playerSelection == null){
-  //       alert('No option was seleceted!')
+  //       alert('No option was selected!')
   //     }
   //   })
   // }
   
-  //declar result now in api no need here
+  //declare result now in api no need here
   //define winning condition , apart from draw there are 3 possibility
   //The question mark ? and : is an alternative to an if statement best used in the case where one of two values will be assigned to a variable based on a conditional statement.
   // checkingResult(){
@@ -144,7 +144,7 @@ export class GameService {
   // }
 
   //play again method and navigate to play component for new game button in result page
-  //dont need this method just navigate in html
+  //don't need this method just navigate in html
   // playAgain(){
   //   of(null).pipe(delay(1000)).subscribe(() =>{
   //     this.router.navigateByUrl('/play');

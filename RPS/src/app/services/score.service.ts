@@ -12,7 +12,7 @@ export class ScoreService {
   scores: LeaderBoardVoteResponseModel[] = [];
   private httpClient: HttpClient;
 
-  constructor(client: HttpClient) { 
+  constructor(client: HttpClient,) { //forgot import service
     this.httpClient = client;
   }
 
@@ -21,7 +21,7 @@ export class ScoreService {
     {
       this.scores = response;
       console.log(response);
-      this.router.navigateByUrl("/Leaderboard");
+      this.router.navigateByUrl("/Leaderboard");//import
     }, (error) => {      
       if(error.status == 401){        
         alert("Unauthorized Error")
