@@ -1,6 +1,6 @@
 R2
 surrogate key beware of this, make the situation more complicated
-in ERD the 2nd diagarm allow to create game without username
+in ERD the 2nd diagram allow to create game without username
 
 In leaderboard require to store game history 
 the history for game or turn
@@ -13,4 +13,4 @@ game code inputbar
 multiplayer
 
 if to calculate the winning result need run through the turn and collect history
-string warchart create rusult for chreator and joiner result
+string warchart create result for creator and joiner result
