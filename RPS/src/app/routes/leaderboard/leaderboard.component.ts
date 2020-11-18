@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ScoreService } from "../../services/score.service";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-leaderboard',
@@ -8,7 +9,7 @@ import { ScoreService } from "../../services/score.service";
 })
 export class LeaderboardComponent implements OnInit {
   //recall service 
-  constructor(public scoreService: ScoreService) { }
+  constructor(public scoreService: ScoreService, private router: Router) { } //!need import router here and top
 
   ngOnInit(): void {
     this.scoreService.getLeaderBoard();

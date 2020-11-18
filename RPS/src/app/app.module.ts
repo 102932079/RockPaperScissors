@@ -15,7 +15,7 @@ import { ScoreListComponent } from './components/score-list/score-list.component
     AppComponent,
     PlayComponent,
     ResultComponent,
-    LeaderboardComponent,//? Leaderboard
+    LeaderboardComponent,//? Leaderboard spelling can ignore
     ScoreComponent,
     ScoreListComponent
   ],
