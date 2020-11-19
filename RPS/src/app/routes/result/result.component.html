@@ -1,15 +1,17 @@
-<!-- game result summay -->
+<!-- game result summary -->
 <div class="header"></div>
 <div class="container">
-    <h1>{{gameService._result}}!</h1>
+    <h1>You {{gameService._result}} !</h1>
     <div class="choices">
         <div *ngIf="gameService.playerSelection === 'rock'" class="selection rock"></div>
         <div *ngIf="gameService.playerSelection === 'paper'" class="selection paper"></div>
         <div *ngIf="gameService.playerSelection === 'scissors'" class="selection scissors"></div>
-        <h3>vs</h3>
+        <h1>vs</h1>
+        <!-- ! CPU choice is not showing its picture -->
         <div *ngIf="gameService._aISelection === 'rock'" class="selection rock"></div>
         <div *ngIf="gameService._aISelection === 'paper'" class="selection paper"></div>
         <div *ngIf="gameService._aISelection === 'scissors'" class="selection scissors"></div>
+        <!-- `the variable here is good no problem -->
     </div>
     <!-- variable for result imported from service-->
     <!-- gameservice need recall in ts ctor -->

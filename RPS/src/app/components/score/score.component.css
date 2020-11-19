@@ -1,8 +1,7 @@
   
 * {
     box-sizing: border-box;
-    margin: 0;
-    
+    margin: 0;    
 }
 
 h4 {
@@ -12,6 +11,6 @@ h4 {
 .results {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(226, 233, 238);
+    background-color:#CFCFCF;
     align-content: center;
 }
