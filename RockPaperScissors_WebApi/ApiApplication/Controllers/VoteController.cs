@@ -39,7 +39,7 @@ namespace ApiApplication.Controllers
             LeaderBoardVoteResponseModel user = null;
             LeaderBoardVoteResponseModel found = Positions.Find(u => u.Username == request.Username);
 
-            if(found == null)
+            if(found == null)//`if the username is null return 1
             {
                 user = new LeaderBoardVoteResponseModel(request.Username, 0, 1);
                 Positions.Add(user);
