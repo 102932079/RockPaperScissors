@@ -1,17 +1,25 @@
 <div class="page">
-    <div class="header">      
-      <div class="login">
-        <h4>Username:</h4>
+
+  <div class="header"> 
+
+    <div class="login">
+      <div id="RPS"><h4>Rock, Paper, Scissors</h4></div>
+      <div class="user">
+        <h4>Username</h4>
         <input *ngIf="username == null" type="text" (keyup.enter)="setUsername($event)">
         <p>{{username}}</p>
       </div>
     </div>
+
+  </div>
   
-    <div class="routes">
-      <router-outlet></router-outlet>
-    </div>
+  <div class="routes">
+    <router-outlet></router-outlet>    
+  </div>
     
-    
-    <a routerLink="leaderboard" class="footer">View Report ></a> 
+  <a class="footer" routerLink="leaderboard">View Report ></a>
+   
+  
+ 
     
 </div>
