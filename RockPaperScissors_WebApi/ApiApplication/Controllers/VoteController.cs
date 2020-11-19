@@ -9,7 +9,7 @@ using ApiApplication.Controllers.Models;
 namespace ApiApplication.Controllers
 {
     [ApiController]
-    [Route("[controller]")]//[Route("[controller]")]//[Route("api/controller")]//!api/vote is not working that way use the default
+    [Route("api/[controller]")]//[Route("[controller]")]//[Route("api/[controller]")]//!api/vote is not working that way use the default
     //+Error: connect ECONNREFUSED 127.0.0.1:5001
     //?Error: write EPROTO 185016920:error:100000f7:SSL routines:OPENSSL_internal:WRONG_VERSION_NUMBER:../../third_party/boringssl/src/ssl/tls_record.cc:242:
     //`search this issue in strat.cs then make sure The Url is correct http not https
