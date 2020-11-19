@@ -12,7 +12,7 @@ export class ScoreService {
   scores: LeaderBoardVoteResponseModel[] = [];
   private httpClient: HttpClient;
 
-  constructor(client: HttpClient,) { //forgot import service
+  constructor(client: HttpClient, private router: Router) { //`forgot import router
     this.httpClient = client;
   }
 
@@ -21,7 +21,7 @@ export class ScoreService {
     {
       this.scores = response;
       console.log(response);
-      this.router.navigateByUrl("/Leaderboard");//import
+      this.router.navigateByUrl("/leaderboard");//!router here is not working is beacuse fotgot to import router in ctor compare to see in game service
     }, (error) => {      
       if(error.status == 401){        
         alert("Unauthorized Error")

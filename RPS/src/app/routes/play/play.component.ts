@@ -11,7 +11,7 @@ import { GameService } from 'src/app/services/game.service';
 })
 export class PlayComponent implements OnInit {
 
-  //define the class for a responed for the player selection has been selected
+  //define the class for a responded for the player selection has been selected
   // public rockSelected: boolean = false;
   // public paperSelected: boolean = false;
   // public scissorsSelected: boolean = false;
@@ -43,16 +43,16 @@ export class PlayComponent implements OnInit {
   //the core function move the winning condition to webapi
   submit() //check null
   {
-    if (this.gameService.username == null)
+    if (this.gameservice.username == null)
     {
       alert("Enter username!")
     }
     else
     {
-      this.gameService.commitSelection({
-        username: this.gameService.username,
-        playerSelection: this.playerSelection
-      });
+      this.gameservice.commitSelection({
+        username: this.gameservice.username, //` can check in service to figure out which variable are which
+        playerChoice: this.selection //!wrong variable notice in models, service and this are different 
+      });//`playerchoice from webapi that passed into the variable in service then here
     }
   }
   // buttonClicked(){

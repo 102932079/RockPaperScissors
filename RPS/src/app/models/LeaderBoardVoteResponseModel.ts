@@ -1,4 +1,4 @@
-//interface/class for leaderboard
+//`interface/class for leaderboard
 //same with api
 export interface LeaderBoardVoteResponseModel
 {
