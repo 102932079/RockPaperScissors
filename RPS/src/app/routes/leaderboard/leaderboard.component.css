@@ -13,3 +13,10 @@
     display: flex;
     justify-content: space-between;
 }
+.footer {
+    float: right;
+    cursor: pointer;
+    color: #1AC6FC;
+    text-decoration: none;
+    
+}

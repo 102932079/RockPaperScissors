@@ -49,8 +49,8 @@ button:hover {
     background: url('../../../assets/rock.png');
     
     
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     left: 10px;
     top: 10px;
     background-size: contain;
@@ -60,8 +60,8 @@ button:hover {
 .paper {
     background: url('../../../assets/paper.png');
     
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     left: 10px;
     top: 10px;
     
@@ -72,8 +72,8 @@ button:hover {
 .scissors {
     background: url('../../../assets/scissors.png');
     
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     left: 10px;
     top: 10px;
     background-size: contain;

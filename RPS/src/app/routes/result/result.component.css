@@ -48,21 +48,38 @@ button:hover {
 
 .rock {
     background: url('../../../assets/rock.png');
+    
+    
+    width: 200px;
+    height: 200px;
+    left: 10px;
+    top: 10px;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .paper {
     background: url('../../../assets/paper.png');
+    
+    width: 200px;
+    height: 200px;
+    left: 10px;
+    top: 10px;
+    
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .scissors {
     background: url('../../../assets/scissors.png');
+    
+    width: 200px;
+    height: 200px;
+    left: 10px;
+    top: 10px;
     background-size: contain;
     background-repeat: no-repeat;
-}
+} 
 /* :host
 {
     display: block;
