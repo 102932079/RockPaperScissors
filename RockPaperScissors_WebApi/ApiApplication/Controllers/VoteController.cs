@@ -20,17 +20,15 @@ namespace ApiApplication.Controllers
     public class VoteController : ControllerBase
     {
         //need a class for leaderboard
-        public static List<LeaderBoardVoteResponseModel> Positions = List<LeaderBoardVoteResponseModel>();
+        public static List<LeaderBoardVoteResponseModel> Positions = new List<LeaderBoardVoteResponseModel>();
 
         //system generated syntax
-        private static List<T> List<T>()
-        {
-            throw new NotImplementedException();
-        }
+        //`remove this because it cause a exception
 
         public VoteController() {}
 
-        //post request to get result /api/vote/submit
+        //post request to get result 
+        //! /apiapplication/vote/submit the url for postman
         [HttpPost("Submit")]
         public SubmitVoteResponseModel SubmitVote([FromBody] SubmitVoteRequestModel request)
         {
@@ -39,7 +37,7 @@ namespace ApiApplication.Controllers
             LeaderBoardVoteResponseModel user = null;
             LeaderBoardVoteResponseModel found = Positions.Find(u => u.Username == request.Username);
 
-            if(found == null)//`if the username is null return 1
+            if(found == null)
             {
                 user = new LeaderBoardVoteResponseModel(request.Username, 0, 1);
                 Positions.Add(user);
