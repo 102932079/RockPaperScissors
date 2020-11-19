@@ -18,10 +18,10 @@ export class ResultComponent implements OnInit {
   constructor(public gameService: GameService, private router: Router) { }
 
   ngOnInit(): void {
-    //if ( this.gameService.playerSelection == null )
-    //{
-      //this.router.navigateByUrl("/play");
-    //}
+    if ( this.gameService.playerSelection == null )
+    {
+      this.router.navigateByUrl("/play");
+    }
     // //define the ngclass for turn the picture to there
     // this.playerChoiceClass = this.gameService.playerSelection;
     // this.cpuChoiceClass = this.gameService.compSelection;
