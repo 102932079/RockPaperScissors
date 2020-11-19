@@ -17,7 +17,7 @@ namespace ApiApplication.Controllers
 
     //+Can not find project error
     //!if there is a can not find project goes into the application folder then build and run
-    public class VoteController : ControllerBase
+    public class VoteController : ControllerBase//`this called naming convention such as vote , class 
     {
         //need a class for leaderboard
         public static List<LeaderBoardVoteResponseModel> Positions = new List<LeaderBoardVoteResponseModel>();

@@ -70,3 +70,11 @@ error handling(optional)
 test it ng serve -o
 
 run dev tool, api port and angular at both time to test
+
+//!solution is the group for different project, it direct many target so you can not use dotnet run (because the system do not know which project you are running) so when using dotnet run goes into the project
+
+//!namespace folder name is sensitive to the change so avoid it and plan clear at init stage you can not change the name , that also why build new system and integrated into old is challenging than build a new one and contain the old function.
+
+//!the git hub branch issue is caused by just move the repo physically with out correct operation. the solution is to rebuild a clean repo and clone the content inside, if you need to move the repo source position
+
+//!to group all the project in one repo is no right or wrong just a developer's habit the only down side is can not change visibility , only the master repo can the sub folder can not 
