@@ -35,7 +35,8 @@ namespace ApiApplication
                         .AllowAnyOrigin()
                         .AllowAnyMethod()
                         .AllowAnyHeader();
-                        //`.AllowCredentials();
+                        //!.AllowCredentials(); 
+                        //this related to refuse connect
                 });
             });
         }
@@ -48,9 +49,9 @@ namespace ApiApplication
                 app.UseDeveloperExceptionPage();
             }
 
-            //!last step add cors method
+            //!last step add cors method 
             app.UseCors();
-
+            //`this related to refuse connect
             //!Disabled: app.UseHttpsRedirection(); (for this RPS project)
 
             app.UseRouting();
