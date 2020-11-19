@@ -23,7 +23,7 @@ namespace ApiApplication.Controllers
         public static List<LeaderBoardVoteResponseModel> Positions = new List<LeaderBoardVoteResponseModel>();
 
         //system generated syntax
-        //`remove this because it cause a exception
+        //!remove this because it cause a exception(exception collector useless)
 
         public VoteController() {}
 
@@ -57,6 +57,7 @@ namespace ApiApplication.Controllers
             user.CalculateWinRatio();
 
             return r;
+            //!the calculate function is called into submit request and delivered into submit response it will process all info there inside model and return the result
 
         }
 
