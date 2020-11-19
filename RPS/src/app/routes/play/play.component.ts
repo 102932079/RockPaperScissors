@@ -26,7 +26,7 @@ export class PlayComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  //method for detected selction been choosed
+  //method for detected selection been choosed
   selectOption(option: 'rock' | 'paper' | 'scissors'){
     this.selection = option;
     // if (option == 'rock'){

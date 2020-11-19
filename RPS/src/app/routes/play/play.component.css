@@ -5,19 +5,19 @@
 }
 
 button {
-    margin-top: 50px;
-    background-color: midnightblue;
+    margin-top: 50px;    
     background: #2566C8;
-
-    border: 2px solid midnightblue;
-    padding: 10px 40px;
-    font-size: 16px;
-    border-radius: 5px;
+    color: #FFFFFF;
+    border: 1px solid black;
+    width: 116px;
+    height: 32px;    
+    font-size: 14px;
+    border-radius: 4px;    
     cursor: pointer;
 }
 
 button:hover {
-    background-color: rgb(240, 240, 240);
+    background-color: white;
     color: black;
 }
 
@@ -30,6 +30,8 @@ button:hover {
 
 .choices {
     display: inline-flex;
+    border: 1px solid black;
+    
 }
 
 .selection {
@@ -40,26 +42,45 @@ button:hover {
 }
 
 .selection:focus {
-    outline: 1px solid midnightblue;
+    outline: 3px solid black;
 }
 
 .rock {
-    background: url('../../../assets/scissors.png');
+    background: url('../../../assets/rock.png');
+    
+    
+    width: 100px;
+    height: 100px;
+    left: 10px;
+    top: 10px;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .paper {
     background: url('../../../assets/paper.png');
+    
+    width: 100px;
+    height: 100px;
+    left: 10px;
+    top: 10px;
+    
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .scissors {
-    background: url('../../../assets/rock.png');
+    background: url('../../../assets/scissors.png');
+    
+    width: 100px;
+    height: 100px;
+    left: 10px;
+    top: 10px;
     background-size: contain;
     background-repeat: no-repeat;
 } 
+/* `use the BG size here to stretch the picture to a visitable form but due to its size it may repeat*/
+/* `use BG repeat-no repeat to stop the repeat picture more than once*/
 /* :host{
     display: block;
     width: 800px;
