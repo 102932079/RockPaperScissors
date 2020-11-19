@@ -1,16 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
 body{
-    background: #E5E5E5;
-    
-    
-    width: 758px;
-    height: 442px;
-    
-    
+    background: #E5E5E5;  
+    border: 1px solid black;  
 }
 
-div{
-    background: #FFFFFF;
-}
 
+*
+{
+    font-family: 'Roboto', sans-serif;
+}
