@@ -36,5 +36,5 @@ ng generate service <name>
 
 -define component import and path in app routing module ts
 
-//!Only the last problem remain win ratio not showing check the Capital and API's code
+//!Only the last problem remain win ratio not showing check the Capital ( spelling syntax )and API's code(logic)
 
