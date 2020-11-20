@@ -92,7 +92,7 @@ export class GameService {
         alert("Method Not Allowed")
       }
       if(error.status == 404){
-        //A common problem with web applications is a user landing on an invalid URI; this error, known as the venerable 404 - page not found error, is a common fallback error case when the application is unable to redirect or resolve a route in an application.
+        //A common problem with web applications is a user landing on an invalid URL; this error, known as the venerable 404 - page not found error, is a common fallback error case when the application is unable to redirect or resolve a route in an application.
         alert("page not found")
       }
       if(error.status == 500){

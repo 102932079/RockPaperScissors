@@ -12,7 +12,7 @@ export class ScoreService {
   scores: LeaderBoardVoteResponseModel[] = [];
   private httpClient: HttpClient;
 
-  constructor(client: HttpClient, private router: Router) { //`forgot import router
+  constructor(client: HttpClient, private router: Router) { //`forgot import router /no need now
     this.httpClient = client;
   }
 
@@ -20,9 +20,10 @@ export class ScoreService {
     this.httpClient.get<LeaderBoardVoteResponseModel[]>("http://localhost:5000/vote/leaderboard").subscribe((response) => 
     {
       this.scores = response;
-      console.log(response);
-      this.router.navigateByUrl("/leaderboard");//!router here is not working is beacuse fotgot to import router in ctor compare to see in game service
-    }, (error) => {      
+      //console.log(response);//`useless remove it
+      //this.router.navigateByUrl("/leaderboard");//!router here is not working is because forgot to import router in ctor compare to see in game service
+    }, (error) => {      //`this is useless as well remove it, by use the router link a tag(view report) it will goes to the leaderboard page anyways in here only pass in the data
+    //`the data of the play result is saved on api 
       if(error.status == 401){        
         alert("Unauthorized Error")
       }

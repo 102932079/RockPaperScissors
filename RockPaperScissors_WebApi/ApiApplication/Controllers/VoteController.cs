@@ -8,8 +8,9 @@ using ApiApplication.Controllers.Models;
 //A Random Number Generator (RNG) is a mathematical construct, either computational or as a hardware device that is designed to generate a random set of numbers that should not display any distinguishable patterns in their appearance or generation, hence the word random.*
 namespace ApiApplication.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]//[Route("[controller]")]//[Route("api/[controller]")]//!api/vote is not working that way use the default
+    [ApiController]//!the "[controller]" this part is the name of the controller is this case the controller named VoteController so the name is the vote (So the URL will be the local host / vote (controller name) /the name of end point)
+    
+    [Route("[controller]")]//[Route("[controller]")]//[Route("api/[controller]")]//!api/vote is not working that way use the default
     //+Error: connect ECONNREFUSED 127.0.0.1:5001
     //?Error: write EPROTO 185016920:error:100000f7:SSL routines:OPENSSL_internal:WRONG_VERSION_NUMBER:../../third_party/boringssl/src/ssl/tls_record.cc:242:
     //`search this issue in strat.cs then make sure The Url is correct http not https

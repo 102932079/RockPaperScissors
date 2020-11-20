@@ -79,4 +79,4 @@ run dev tool, api port and angular at both time to test
 
 //!to group all the project in one repo is no right or wrong just a developer's habit the only down side is can not change visibility , only the master repo can the sub folder can not 
 
-//!two port http sercure not sercure
+//!after dotnet run the system will offer two URL one is secured one is not, the one with https is secured the http is not, so be notice about the URL

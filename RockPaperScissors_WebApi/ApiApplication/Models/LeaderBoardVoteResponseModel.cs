@@ -17,12 +17,12 @@ namespace ApiApplication.Controllers.Models
 
         // }//prop
         public string Username { get; set; }
-        public int Wins { get; set; }
-        public int TurnsPlayed { get; set; }
+        public double Wins { get; set; }//`int? no confired this is the issue cause winratio not showing problem DATATYPE
+        public double TurnsPlayed { get; set; }//`int? no confired this is the issue cause winratio not showing problem DATATYPE
         public double WinRatio { get; set; }
 
         //ctor
-        public LeaderBoardVoteResponseModel(string username, int wins, int turnsPlayed)
+        public LeaderBoardVoteResponseModel(string username, double wins, double turnsPlayed)//`also the datatype need to be double as well
         {
             this.Username = username;
             this.Wins = wins;
