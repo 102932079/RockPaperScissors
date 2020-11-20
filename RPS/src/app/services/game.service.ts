@@ -77,8 +77,8 @@ export class GameService {
       //then we need store them into the variable we created earlier all _variable
       //store the selection 
       this._playerSelection = response.playerChoice; //!this is the variable for this page, response is the variable from webapi
-      this._aISelection = response.aIChoice; //`don't mix up
-      this._result = response.result;
+      this._aISelection = response.aiChoice; //`don't mix up  
+      this._result = response.result;//! i
       this._username = response.username;
       this.router.navigateByUrl("/result");
     }, (error) => {//error handling new content

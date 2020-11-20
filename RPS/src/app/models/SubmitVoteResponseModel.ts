@@ -5,6 +5,6 @@
 export interface SubmitVoteResponseModel {
     username: string;
     playerChoice: string;
-    aIChoice: string;
+    aiChoice: string;
     result: string;
 }

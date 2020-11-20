@@ -78,3 +78,5 @@ run dev tool, api port and angular at both time to test
 //!the git hub branch issue is caused by just move the repo physically with out correct operation. the solution is to rebuild a clean repo and clone the content inside, if you need to move the repo source position
 
 //!to group all the project in one repo is no right or wrong just a developer's habit the only down side is can not change visibility , only the master repo can the sub folder can not 
+
+//!two port http sercure not sercure

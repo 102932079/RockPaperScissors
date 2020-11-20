@@ -14,10 +14,10 @@ export class LeaderboardComponent implements OnInit {
 
   ngOnInit(): void { //` add a back to play compo page in case get stuck and import the game service again on top and ctor
     
-    if ( this.gameService.playerSelection == null )
-    {
-      this.router.navigateByUrl("/play");
-    }
+    // if ( this.gameService.playerSelection == null )
+    // {
+    //   this.router.navigateByUrl("/play");
+    // }
     this.scoreService.getLeaderBoard();
   }
 
