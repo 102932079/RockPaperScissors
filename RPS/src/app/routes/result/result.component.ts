@@ -21,7 +21,7 @@ export class ResultComponent implements OnInit {
     // if ( this.gameService.playerSelection == null )
     // {
     //   this.router.navigateByUrl("/play");
-    // }
+    // }//!need to remove this otherwise it cause the infinite loop between play and result
     // //define the ngclass for turn the picture to there
     // this.playerChoiceClass = this.gameService.playerSelection;
     // this.cpuChoiceClass = this.gameService.compSelection;

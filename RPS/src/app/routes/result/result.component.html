@@ -8,6 +8,7 @@
         <div *ngIf="gameService.playerSelection === 'scissors'" class="selection scissors"></div>
         <h1>vs</h1>
         <!-- ! CPU choice is not showing its picture -->
+        <!-- +Lachlan found the issue with F12 dev tool so use it to help you -->
         <div *ngIf="gameService._aISelection === 'rock'" class="selection rock"></div>
         <div *ngIf="gameService._aISelection === 'paper'" class="selection paper"></div>
         <div *ngIf="gameService._aISelection === 'scissors'" class="selection scissors"></div>

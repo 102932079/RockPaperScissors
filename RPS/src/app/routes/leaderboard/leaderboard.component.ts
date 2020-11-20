@@ -17,7 +17,7 @@ export class LeaderboardComponent implements OnInit {
     // if ( this.gameService.playerSelection == null )
     // {
     //   this.router.navigateByUrl("/play");
-    // }
+    // }//!need to remove this otherwise it cause the infinite loop between play and leaderboard
     this.scoreService.getLeaderBoard();
   }
 
