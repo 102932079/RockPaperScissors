@@ -91,7 +91,7 @@ export class GameService {
         //The 405 Method Not Allowed is an HTTP response status code indicating that the specified request HTTP method was received and recognized by the server, but the server has rejected that particular method for the requested resource. 
         alert("Method Not Allowed")
       }
-      if(error.status == 404){
+      if(error.status == 404){//!some time the application showing 404 means the URL provided is not valid so rebuild the api and run again for any changes
         //A common problem with web applications is a user landing on an invalid URL; this error, known as the venerable 404 - page not found error, is a common fallback error case when the application is unable to redirect or resolve a route in an application.
         alert("page not found")
       }

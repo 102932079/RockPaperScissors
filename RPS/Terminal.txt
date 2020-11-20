@@ -38,3 +38,4 @@ ng generate service <name>
 
 //!Only the last problem remain win ratio not showing check the Capital ( spelling syntax )and API's code(logic)
 
+//!some time the application showing 404 means the URL provided is not valid so rebuild the api and run again for any changes

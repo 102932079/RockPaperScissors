@@ -3,7 +3,7 @@
 export interface LeaderBoardVoteResponseModel
 {
     username: string;
-    wins: number;//!its number not string not this error not affect the winratio
+    wins: number;//!its number not string this is one of the error cause winratio not showing
     turnsPlayed: number;
     winRatio: number;
 }
